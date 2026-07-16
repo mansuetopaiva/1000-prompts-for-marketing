@@ -5,44 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>1000 ChatGPT Prompts for Affiliate Marketing — Start Like a Pro</title>
   <meta name="description" content="1000 high-converting ChatGPT prompts for affiliate marketing. Launch faster, write better, and scale your commissions.">
-  <style>
-    :root { --bg:#0b0f17; --fg:#f9fafb; --accent:#22c55e; --head:#ffffff; }
-    * { box-sizing: border-box; }
-    body { margin:0; font-family: Inter, system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif; background:var(--bg); color:var(--fg); }
-    a { color: var(--fg); }
-    h1, h2, h3, h4, .h1 { color: var(--head); }
-    .wrap { max-width: 1100px; margin: 0 auto; padding: 2rem 1rem; }
-    .badge { display:inline-block; background: var(--accent); color: var(--bg); padding: .35rem .8rem; border-radius: 999px; font-weight: 700; font-size: .9rem; }
-    .h1 { font-size: clamp(2rem, 6vw, 3.2rem); font-weight: 900; margin: 1rem 0 0; color: var(--head); }
-    .sub { font-size: clamp(1.05rem, 2.5vw, 1.25rem); opacity: .9; max-width: 800px; }
-    .cta { display:inline-block; background: var(--accent); color: var(--bg); padding: 1rem 1.5rem; border-radius: .8rem; font-weight: 800; text-decoration: none; margin-top: 1.25rem; }
-    .meta { font-size: .9rem; opacity: .75; margin-top: .6rem; }
-    .section { padding: 3rem 0; }
-    .center { text-align:center; }
-    .grid { display:grid; gap:1rem; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); padding:0; list-style:none; }
-    .pill { background:#111827; border:1px solid #1f2937; padding:.85rem 1rem; border-radius:.75rem; display:flex; justify-content:space-between; align-items:center; color:var(--fg);}
-    .count { opacity:.8; font-size:.95rem; }
-    .cards { display:grid; gap:1.25rem; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); }
-    .card { background:#111827; border:1px solid #1f2937; padding:1.25rem; border-radius:.85rem; opacity:.95; color:var(--fg);}
-    .list { line-height:1.9; font-size:1.05rem; color:var(--fg);}
-    .value { font-size:1.25rem; margin-top: .75rem; color:var(--head);}
-    .strike { opacity:.7; text-decoration: line-through; }
-    .faq-item { background:#0f1420; border:1px solid #1f2937; padding:1rem 1.25rem; border-radius:.85rem; color:var(--fg);}
-    footer { text-align:center; font-size:.9rem; opacity:.65; padding:2rem 0 3rem; }
-    footer a { color: var(--fg); opacity:.85; text-decoration:none; margin: 0 .5rem; }
-    .trust .tb { background:#0f1420; border:1px solid #1f2937; padding:.5rem .9rem; border-radius:.6rem; font-size:.95rem; opacity:.9; color:var(--fg);}
-    .sticky-cta { position: fixed; left:0; right:0; bottom:0; background:#0b101aEE; backdrop-filter: blur(6px); border-top:1px solid #1f2937; z-index:9999; }
-    .sticky-cta .inner { max-width:1100px; margin:0 auto; padding:.85rem 1rem; display:flex; align-items:center; gap:1rem; justify-content:space-between; }
-    .sticky-cta .txt { font-weight:700; font-size:1rem; opacity:.95; color:var(--head);}
-    .btn { display:inline-block; background: var(--accent); color: var(--bg); padding:.8rem 1.1rem; border-radius:.6rem; font-weight:800; text-decoration:none; }
-    @media (max-width: 520px) { .sticky-cta .txt { display:none; } }
-    .modal-backdrop { position:fixed; inset:0; background:#0008; display:none; align-items:center; justify-content:center; z-index:10000; }
-    .modal { background:#0f1420; border:1px solid #1f2937; border-radius:1rem; padding:1.25rem; width:min(560px,90vw); color:var(--fg);}
-    .modal h3 { margin:0 0 .25rem 0; font-size:1.5rem; color:var(--head);}
-    .modal p { opacity:.9; }
-    .modal .actions { display:flex; gap:.75rem; margin-top:1rem; justify-content:flex-end; }
-    .ghost { background:transparent; border:1px solid #334155; color:var(--fg); padding:.7rem 1rem; border-radius:.6rem; font-weight:700; cursor:pointer; }
-  </style>
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
@@ -190,43 +153,7 @@
     </div>
   </div>
 
-  <script>
-    (function(){
-      var modal = document.getElementById('exitModal');
-      var closeBtn = document.getElementById('closeModal');
-
-      function showModal(){
-        if (sessionStorage.getItem('exitModalShown')) return;
-        modal.style.display = 'flex';
-        sessionStorage.setItem('exitModalShown', '1');
-      }
-
-      document.addEventListener('mouseleave', function(e){
-        if (e.clientY <= 0) showModal();
-      });
-
-      closeBtn && closeBtn.addEventListener('click', function(){
-        modal.style.display = 'none';
-      });
-
-      modal && modal.addEventListener('click', function(e){
-        if(e.target === modal) modal.style.display = 'none';
-      });
-
-      function toggleSticky(){
-        var bar = document.getElementById('stickyCTA');
-        if (!bar) return;
-        if (window.innerHeight < 480) {
-          bar.style.display = 'none';
-        } else {
-          bar.style.display = 'block';
-        }
-      }
-
-      window.addEventListener('resize', toggleSticky);
-      toggleSticky();
-    })();
-  </script>
+  <script src="script.js" defer></script>
 
 </body>
 </html>
